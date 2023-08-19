@@ -61,7 +61,7 @@ class Juego:
             resultado = self.jugar(eleccion_jugador)
             print(resultado)
             print("\n" + self.mostrar_puntuacion())
-            time.sleep(2)
+            time.sleep(1.5)
             print("\n" + "-"*40 + "\n")
 
 if __name__ == "__main__":
