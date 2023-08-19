@@ -16,8 +16,7 @@ def main():
         "2": resta,
         "3": multiplicacion,
         "4": division
-    }1
-
+    }
 
     print("1. Sumar\n2. Restar\n3. Multiplicar\n4. Dividir")
     seleccion = input(": ")
