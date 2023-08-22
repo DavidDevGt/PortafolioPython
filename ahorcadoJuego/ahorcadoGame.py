@@ -4,8 +4,8 @@ import os
 class Ahorcado:
     def __init__(self):
         self.palabras_tecnologia = {
-            'Lenguajes': ['python', 'javascript', 'ruby', 'visual basic'],
-            'Frameworks': ['django', 'react', 'flask', 'angular', 'react native', 'vue']
+            'Lenguajes de Programación': ['python', 'golang', 'javascript', 'ruby', 'visual basic'],
+            'Frameworks': ['django', 'react', 'flask', 'angular', 'svelte', 'react native', 'vue']
         }
         self.categoria = ''
         self.palabra = ''
