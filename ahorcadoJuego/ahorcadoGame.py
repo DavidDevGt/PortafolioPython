@@ -53,3 +53,22 @@ class Ahorcado:
                 print(f"\nHas perdido. La palabra era: {self.palabra}")
             else:
                 print(f"\n¡Felicitaciones! Adivinaste la palabra: {self.palabra}")
+
+    def jugar(self):
+        self.seleccionar_palabra()
+        while not self.juego_completado():
+            self.interfaz_juego()
+            letra = input("\nIntroduce una letra o la palabra: ").lower()
+            resultado = self.intentar_letra(letra)
+            if resultado == 'repetida':
+                input("\nYa intentaste esa letra. Pulsa enter para continuar.")
+            elif resultado == 'fallo':
+                input("\nIncorrecto. Pulsa enter para continuar.")
+            else:
+                input("\n¡Correcto! Pulsa enter para continuar.")
+            self.fin_juego = self.juego_completado()
+        self.interfaz_juego()
+
+if __name__ == "__main__":
+    juego = Ahorcado()
+    juego.jugar()
